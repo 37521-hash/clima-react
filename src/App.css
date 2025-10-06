@@ -25,3 +25,44 @@ header p{
   font-size: 1.1em;
   color: #bdeafe;
 }
+.busca-box{
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px #00000098;
+  padding: 24px;
+  margin-bottom: 24px;
+}
+.busca-container{
+  display: flex;
+  gap: 8px;
+}
+.busca-container input{
+  flex: 1;
+  padding: 12px 16px;
+  border: 1px solid #d1d5db;
+  border-radius: 16px;
+  outline: none;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+.busca-container input:focus{
+  border-color: #0062ff;
+  box-shadow: 0 0 0 3px #0062ff98;
+}
+.busca-container button{
+  padding: 12px 24px;
+  background: #3b82f6;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.2;
+}
+.busca-container button:hover{
+  background: #2563eb;
+}
+.busca-container button:disabled{
+  cursor: not-allowed;
+  background: #9ca3af;
+}
