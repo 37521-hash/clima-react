@@ -1,6 +1,6 @@
 .container{
   min-height: 100vh;
-  background: linear-gradient(135deg, #ffffff 0%, #000000 100%);
+  background: linear-gradient(135deg, #ffffff 0%, #585858 100%);
   padding: 32px;
 }
 .content{
@@ -66,6 +66,7 @@ header p{
   cursor: not-allowed;
   background: #9ca3af;
 }
+
 #card-resultado{
   background: #fff;
   border-radius: 12px;
@@ -105,17 +106,17 @@ header p{
   color: #4b5563;
 }
 #detalhes-box{
- display: grid;
- grid-template-columns: repeat(3,1fr);
- gap: 16px;
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 16px;
 }
 .detal-item{
-background: #eff6ff;
-padding: 16px;
-border-radius: 8px;
-text-align: center;
+  background: #ccc;
+  padding: 16px;
+  border-radius: 8px;
+  text-align: center;
 }
-.detal.icone{
+.detal-icone{
   display: flex;
   justify-content: center;
   margin-bottom: 8px;
@@ -129,6 +130,8 @@ text-align: center;
   font-weight: bold;
   color: #222;
 }
+
+/* RESPONSIVO */
 @media (max-width: 768px){
   #detalhes-box{
     grid-template-columns: 1fr;
